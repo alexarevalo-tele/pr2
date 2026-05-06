@@ -4,7 +4,7 @@ USE parking_db;
 
 CREATE TABLE IF NOT EXISTS parking (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    license_plate VARCHAR(50) NOT NULL,
-    entry BOOLEAN NOT NULL,
-    timestamp DATETIME NOT NULL
+    matricula VARCHAR(50) NOT NULL,
+    entrada BOOLEAN NOT NULL,
+    hora DATETIME NOT NULL
 );

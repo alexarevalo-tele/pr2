@@ -8,30 +8,29 @@ import org.hibernate.annotations.CreationTimestamp;
 @Table(name = "parking")
 public class ParkingRecord_DTO_aaa00081 {
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String licensePlate;
+    private String matricula;
     
-    private boolean entry; 
+    private boolean entrada; 
     
     @CreationTimestamp(source = SourceType.DB)
-    private LocalDateTime timestamp;
+    private LocalDateTime hora;
 
     public ParkingRecord_DTO_aaa00081() {}
 
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 
-    public String getLicensePlate() { return licensePlate; }
-    public void setLicensePlate(String licensePlate) { this.licensePlate = licensePlate; }
+    public String getMatricula() { return matricula; }
+    public void setMatricula(String matricula) { this.matricula = matricula; }
 
-    public boolean isEntry() { return entry; }
-    public void setEntry(boolean entry) { this.entry = entry; }
+    public boolean isEntrada() { return entrada; }
+    public void setEntrada(boolean entrada) { this.entrada = entrada; }
 
-    public LocalDateTime getTimestamp() { return timestamp; }
-    public void setTimestamp(LocalDateTime timestamp) { this.timestamp = timestamp; }
+    public LocalDateTime getHora() { return hora; }
+    public void setHora(LocalDateTime hora) { this.hora = hora; }
 
 }

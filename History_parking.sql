@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS parking_db;
+
+USE parking_db;
+
+CREATE TABLE IF NOT EXISTS parking (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    license_plate VARCHAR(50) NOT NULL,
+    entry BOOLEAN NOT NULL,
+    timestamp DATETIME NOT NULL
+);

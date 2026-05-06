@@ -5,4 +5,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ParkingRecord_Repository_aaa00081 extends JpaRepository<ParkingRecord_DTO_aaa00081, Long> {
+    ParkingRecord_DTO_aaa00081 findTopByMatriculaAndEntradaOrderByHoraDesc(String matricula, boolean entrada);
 }
